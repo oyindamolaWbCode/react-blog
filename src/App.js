@@ -1,7 +1,6 @@
 
-
-import NavBar from './navbar';
-import Home from './home'
+import NavBar from './Navbar';
+import Home from './Home'
 
 function App() {
   return (
