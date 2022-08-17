@@ -4,7 +4,7 @@ const Navbar = () => {
             <h1>The Blog</h1>
             <div className="links">
                 <a href="./">Home</a>
-                <a href="./create">New Bl0og</a>
+                <a href="./create">New Blog</a>
                 <a href="./"style={{
                     color: "purple"
                 }}>About</a>
