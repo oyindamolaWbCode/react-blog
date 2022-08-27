@@ -1,4 +1,5 @@
 // props is used for reuseable codes, It is a way of passing parent component to a child component
+ import { Link } from "react-router-dom"
 
 const BlogList = ({ blogs, title }) => {
   return (
@@ -7,8 +8,10 @@ const BlogList = ({ blogs, title }) => {
       {blogs.map((blog) => (
         <div className="blog-preview" key={blog.id}>
           <h2> {blog.title} </h2>
+          <Link to = {`./blogs/${blog.id}`}>
           <p>Written by {blog.author} </p>
           <p> {blog.year} </p>
+          </Link>  
         </div>
       ))}
     </div>

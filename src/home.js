@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+
 import BlogList from "./BlogLists";
 import useFetch from "./useFetch";
 
@@ -7,7 +7,7 @@ const Home = () => {
     data: blogs,
     isPending,
     error,
-  } = useFetch("http://localhost:8000/blogs");
+  } = useFetch(" http://localhost:8000/blogs");
 
   /*{const handleDelete = (id) => {
             const newBlogs = blogs.filter(blog => blog.id !== id);
