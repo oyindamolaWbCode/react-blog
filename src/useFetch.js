@@ -7,6 +7,7 @@ const useFetch = (url) =>{
     const [error, SetError] = useState(null);
 
     useEffect(() =>{
+
         setTimeout(() =>{
              fetch(url)
         .then(res =>{
