@@ -31,8 +31,13 @@
   padding:6px;
 }
 
+.navbar .links a:hover{
+   margin-top:10px;
+}
+
 .navbar a:hover{
   color:#f1356d;
+  
 }
 
 .content{
