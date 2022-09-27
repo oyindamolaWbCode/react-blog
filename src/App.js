@@ -3,11 +3,12 @@ import Home from "./Home";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Create from "./Create";
 import BlogDetails from "./BlogDetails";
-import NotFound from "./NotFound";
+import React from "react";
+const LazyFound = React.lazy(() => import ("./NotFound"));
 
 function App() {
   return (
-    <Router>
+    <Router>""
       <div className="App">
         <NavBar />
         <div className="content">
@@ -24,7 +25,9 @@ function App() {
           </Switch>
         </div>
         <Route path="*" className="ntfound">
-              <NotFound />
+          <React.Suspense fallback={<div>Loading...</div>}>
+            <LazyFound />
+          </React.Suspense>
             </Route>
       </div>
     </Router>
